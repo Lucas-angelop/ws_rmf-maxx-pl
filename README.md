@@ -1,5 +1,5 @@
 <center>
-<img src="C:\Users\Lucas\Documentos\Data\Projetos\ws_rmf-maxx-pl\img\nowe-logo-rmf-maxx.png" alt="RMFMAXX-PL" width="350" height="200"></center> 
+<img src="https://github.com/Lucas-angelop/ws_rmf-maxx-pl/blob/master/img/nowe-logo-rmf-maxx.png" alt="RMFMAXX-PL" width="350" height="200"></center> 
 
 # _Web Scraping RMF MAXX PL_
  
