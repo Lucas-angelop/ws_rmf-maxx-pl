@@ -11,7 +11,7 @@ Visando adquirir e armazenar dados referentes as musicas tocadas (_[Playlista](h
 
 - [ ] **_Scraping_**
  - Realizar a conexão e desenvolver script conforme disposição do HTML
-    - [ ] **_Playlista_**
+    - [x] **_Playlista_**
     - [ ] **_HopBec_**
 
 - [ ] **_Armazenamento_**
