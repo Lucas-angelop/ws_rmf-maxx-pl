@@ -9,10 +9,10 @@ Visando adquirir e armazenar dados referentes as musicas tocadas (_[Playlista](h
 
 ##### To Do
 
-- [ ] **_Scraping_**
+- [X] **_Scraping_**
  - Realizar a conexão e desenvolver script conforme disposição do HTML
-    - [x] **_Playlista_**
-    - [ ] **_HopBec_**
+    - [X] **_Playlista_**
+    - [X] **_HopBec_**
 
 - [ ] **_Armazenamento_**
 - Carregamento dos campos para o banco de dados.
