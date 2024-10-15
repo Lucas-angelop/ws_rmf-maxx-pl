@@ -1,7 +1,7 @@
 <center>
-<img src="https://github.com/Lucas-angelop/ws_rmf-maxx-pl/blob/master/img/nowe-logo-rmf-maxx.png" alt="RMFMAXX-PL" width="350" height="200"></center> 
+<img src="docs\img\nowe-logo-rmf-maxx.png" alt="RMFMAXX-PL" width="350" height="200"></center> 
 
-# _Web Scraping RMF MAXX PL_
+# Web Scraping RMF MAXX PL
  
 Scraping de dados da rádio [RMF MAXX PL](https://www.rmfmaxx.pl/) utilizando [Requests](https://requests.readthedocs.io/en/latest/) e [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/).
 Visando adquirir e armazenar dados referentes as musicas tocadas (_[Playlista](https://www.rmfmaxx.pl/muzyka/playlista)_) e os hits semanais votados pelo público (_[HopBec](https://www.rmfmaxx.pl/hopbec/propozycje)_).
@@ -14,12 +14,16 @@ Visando adquirir e armazenar dados referentes as musicas tocadas (_[Playlista](h
     - [X] **_Playlista_**
     - [X] **_HopBec_**
 
+- [ ] **_Classes do Projeto_**
+    - [X] **_Scraping_**
+    - [ ] **_Storage_**
+    - [ ] **_Schedule_**
+
 - [ ] **_Armazenamento_**
 - Carregamento dos campos para o banco de dados.
 
-##### Pacotes utilizados
+- [ ] **_Agendamento_**
+- Agendamento do _scraping_ e _storage_ com Prefect ou Airflow.
 
-- *python* : 3.11.5
-- *pandas* : 1.4.2
-- *python-dotenv* : 1.0.0
-- *mysql.connector* : 2.2.9
+- [ ] **_Tradução_**
+    - [ ] Tradução do projeto para EN-US.
