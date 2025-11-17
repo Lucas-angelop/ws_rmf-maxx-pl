@@ -4,8 +4,7 @@ import requests as rq
 
 from bs4 import BeautifulSoup
 # Class
-
-class Maxx:
+class Scraping:
     """
     Makes request and returns website data
     """
@@ -18,7 +17,7 @@ class Maxx:
         Parameters
         ----------
         url : str
-            The url base for webscraping (default is rmfmaxx.pl)
+            The url base for webscraping (default is rmfmaxx.pl) 
         header : str
             The header contais your user-agent
         """
@@ -31,13 +30,14 @@ class Maxx:
 
         Args:
             path (str) : Complement of base url (default is 'muzyka/playlista')
-            hours (int): The number of hours to be extracted (default is 24 > a day)
+            hours (int): The number of hours to be extracted (default is 24 == 1 day)
 
         Returns:
             dict: a dict with date, time, music title and artist name.
         """
-        print('Start Scraping')
+        print('Scraping Playlista')
         playlista = []
+        
         for hour in range(hours):
             # Get Page
             relative_url = self.url + path + f"/{hour}#p"
@@ -85,7 +85,7 @@ class Maxx:
         Returns:
             dict: a dict with edition, position, music title and artist name.
         """
-
+        print('Scraping HopBec')
         # Get Page
         rmf_hopbec = rq.get(self.url + path, headers=self.header)
         soup = BeautifulSoup(rmf_hopbec.content, 'html.parser')
@@ -102,7 +102,7 @@ class Maxx:
             edition = soup.find('title').get_text()
             edition = edition[10:14]
             # Position
-            position = music.find('div', class_ = 't-element-cover d-block').get_text().strip()
+            position = music.find('span', class_ = 't-element-position mx-rounded bg-primary py-2 px-3 fw-bold').get_text().strip()
             # Title
             title = music.find('a', class_ = 'song-title text-muted').get_text()
             # Artist
@@ -115,4 +115,5 @@ class Maxx:
                      'Artist'    : artist
                      })
 
+        print('Successful')
         return hop_bec

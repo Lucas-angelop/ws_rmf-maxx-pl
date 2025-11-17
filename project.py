@@ -2,9 +2,9 @@
 wip
 """
 
-from rmfmaxxpl.Maxx import Maxx
+from rmfmaxxpl.Maxx import Scraping
 
-maxx = Maxx()
+maxx = Scraping()
 
 # Scraping
 hop_bec = maxx.GetHopBec()
